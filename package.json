@@ -1,0 +1,19 @@
+{
+  "name": "fitness-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node api/server.js",
+    "start": "node api/server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mqtt": "^5.14.1",
+    "pdfkit": "^0.13.0",
+    "serverless-http": "^3.2.0",
+    "sqlite3": "^5.1.7"
+  }
+}
