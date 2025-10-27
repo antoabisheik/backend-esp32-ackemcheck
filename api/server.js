@@ -9,13 +9,13 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// 🧩 Get current in-memory data
+// Get current in-memory data
 app.get("/api/data", (req, res) => {
   res.json({ data: dataBuffer });
   flushToDB();
 });
 
-// 💾 Manually flush to DB
+// Manually flush to DB
 app.post("/api/flush", (req, res) => {
   flushToDB();
   res.json({ message: "Data flushed to DB" });
