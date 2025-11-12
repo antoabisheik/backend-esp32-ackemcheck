@@ -2,7 +2,7 @@ import mqtt from "mqtt";
 import db from "./db.js";
 
 const MQTT_BROKER = "mqtt://broker.hivemq.com";
-const TOPIC_DATA = "iot/fitness/data";
+const TOPIC_DATA = "iot/devices/A0:85:E3:0E:17:E8/data";
 const TOPIC_CONTROL = "iot/fitness/control";
 
 const client = mqtt.connect(MQTT_BROKER);
